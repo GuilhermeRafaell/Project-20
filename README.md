@@ -144,14 +144,10 @@ O projeto pode ser facilmente implantado em plataformas como:
 
 Basta conectar o repositório e a plataforma detectará automaticamente as configurações do Vite.
 
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
-
 ## 📄 Licença
 
 Este projeto está sob licença privada.
 
 ---
 
-Desenvolvido com 💙 e ⚡
+Desenvolvido com 💙 e café
