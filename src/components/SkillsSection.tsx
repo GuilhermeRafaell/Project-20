@@ -7,14 +7,14 @@ const athleteSkills = [
   { name: "Resistência", level: 85 },
   { name: "Disciplina", level: 98 },
   { name: "Foco sob pressão", level: 90 },
-  { name: "Trabalho em equipe", level: 88 },
+  { name: "Trabalho em equipe", level: 95},
 ];
 
 const techSkills = [
   { name: "React / React Native", level: 92 },
   { name: "TypeScript", level: 90 },
   { name: "Node.js", level: 85 },
-  { name: "Java / Spring Boot", level: 80 },
+  { name: "Java / Spring Boot", level: 70 },
   { name: "SQL / PostgreSQL", level: 88 },
 ];
 

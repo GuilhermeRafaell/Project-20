@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Início", href: "#hero" },
   { label: "Sobre", href: "#sobre" },
   { label: "Conquistas", href: "#conquistas" },
+  { label: "Galeria", href: "#galeria" },
   { label: "Projetos", href: "#projetos" },
   { label: "Skills", href: "#skills" },
   { label: "Contato", href: "#contato" },

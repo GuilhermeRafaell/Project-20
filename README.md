@@ -1,73 +1,157 @@
-# Welcome to your Lovable project
+# Portfolio - Atleta & Desenvolvedor
 
-## Project info
+Um portfólio pessoal moderno que une a paixão pelo atletismo com a excelência em desenvolvimento de software. Este projeto apresenta conquistas esportivas, projetos técnicos e habilidades profissionais em uma interface elegante e responsiva.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Tecnologias
 
-## How can I edit this code?
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-There are several ways of editing your application.
+- **[Vite](https://vitejs.dev/)** - Build tool moderna e rápida
+- **[React](https://react.dev/)** - Biblioteca para construção de interfaces
+- **[TypeScript](https://www.typescriptlang.org/)** - Superset JavaScript com tipagem estática
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utility-first
+- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes reutilizáveis e customizáveis
+- **[React Query](https://tanstack.com/query/latest)** - Gerenciamento de estado assíncrono
+- **[React Router](https://reactrouter.com/)** - Roteamento para aplicações React
+- **[Vitest](https://vitest.dev/)** - Framework de testes unitários
+- **[Lucide React](https://lucide.dev/)** - Biblioteca de ícones
 
-**Use Lovable**
+## 📋 Estrutura do Projeto
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+O projeto está organizado da seguinte forma:
 
-Changes made via Lovable will be committed automatically to this repo.
+```
+src/
+├── components/          # Componentes React
+│   ├── ui/             # Componentes base do shadcn/ui
+│   ├── Header.tsx      # Cabeçalho com navegação
+│   ├── HeroSection.tsx # Seção principal
+│   ├── AboutSection.tsx # Sobre
+│   ├── AchievementsSection.tsx # Conquistas esportivas
+│   ├── ProjectsSection.tsx # Projetos técnicos
+│   ├── SkillsSection.tsx # Habilidades
+│   ├── ContactSection.tsx # Contato
+│   └── Footer.tsx      # Rodapé
+├── pages/              # Páginas da aplicação
+│   ├── Index.tsx       # Página principal
+│   └── NotFound.tsx    # Página 404
+├── hooks/              # Custom hooks
+├── lib/                # Utilitários e configurações
+└── test/               # Arquivos de teste
+```
 
-**Use your preferred IDE**
+## 🎯 Funcionalidades
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- ✨ Design moderno com tema dark
+- 📱 Totalmente responsivo
+- 🎨 Componentes reutilizáveis com shadcn/ui
+- 🔄 Navegação suave entre seções
+- 🎭 Animações e transições elegantes
+- 🧪 Testes unitários configurados
+- 📦 Build otimizado para produção
+- 🔍 SEO-friendly
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 💻 Como executar
 
-Follow these steps:
+### Pré-requisitos
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- [Node.js](https://nodejs.org/) (versão 16 ou superior)
+- [Bun](https://bun.sh/) ou npm/yarn
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Instalação
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. Clone o repositório:
+```bash
+git clone https://github.com/GuilhermeRafaell/Project-20.git
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+2. Acesse a pasta do projeto:
+```bash
+cd Project-20
+```
+
+3. Instale as dependências:
+```bash
+bun install
+```
+ou com npm:
+```bash
+npm install
+```
+
+### Executar em desenvolvimento
+
+```bash
+bun run dev
+```
+ou com npm:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O projeto estará disponível em `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build para produção
 
-**Use GitHub Codespaces**
+```bash
+bun run build
+```
+ou com npm:
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Preview da build
 
-## What technologies are used for this project?
+```bash
+bun run preview
+```
+ou com npm:
+```bash
+npm run preview
+```
 
-This project is built with:
+## 🧪 Testes
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Executar testes:
+```bash
+bun run test
+```
 
-## How can I deploy this project?
+Executar testes em modo watch:
+```bash
+bun run test:watch
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📝 Scripts disponíveis
 
-## Can I connect a custom domain to my Lovable project?
+- `dev` - Inicia o servidor de desenvolvimento
+- `build` - Gera build de produção
+- `build:dev` - Gera build em modo desenvolvimento
+- `preview` - Visualiza a build de produção
+- `lint` - Executa o ESLint
+- `test` - Executa os testes
+- `test:watch` - Executa os testes em modo watch
 
-Yes, you can!
+## 🚀 Deploy
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+O projeto pode ser facilmente implantado em plataformas como:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [GitHub Pages](https://pages.github.com/)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
+
+Basta conectar o repositório e a plataforma detectará automaticamente as configurações do Vite.
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+
+## 📄 Licença
+
+Este projeto está sob licença privada.
+
+---
+
+Desenvolvido com 💙 e ⚡

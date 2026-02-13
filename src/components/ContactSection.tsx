@@ -8,8 +8,8 @@ import { Github, Linkedin, Instagram, Send } from "lucide-react";
 
 const socials = [
   { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Instagram, label: "Instagram", href: "#" },
+  { icon: Github, label: "GitHub", href: "https://github.com/GuilhermeRafaell?tab=repositories" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/guilherm6/" },
 ];
 
 export default function ContactSection() {
@@ -20,7 +20,7 @@ export default function ContactSection() {
       <div className="container max-w-3xl" ref={ref}>
         <div className="text-center mb-12">
           <h2 className={`font-display text-3xl sm:text-4xl font-bold mb-4 ${isVisible ? "animate-fade-up" : "opacity-0"}`}>
-            Vamos <span className="gradient-text">Conversar?</span>
+            Bora <span className="gradient-text">Conversar?</span>
           </h2>
           <p className={`text-muted-foreground text-lg ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "0.1s" }}>
             Tem um projeto em mente ou quer bater um papo? Manda mensagem!

@@ -3,31 +3,31 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
 
-type Filter = "all" | "pessoal" | "profissional";
+
+type Filter = "all" | "pessoal" | "profissional" | "academico";
 
 const projects = [
   {
-    title: "TrackMyRun",
-    description: "App para registro de treinos e corridas, com métricas de desempenho e histórico de evolução.",
-    tags: ["React Native", "TypeScript", "Firebase"],
+    title: "JumpLab",
+    description: "Aplicativo para análise de salto vertical, medição precisa da altura do salto, tempo de voo e acompanhamento da evolução do desempenho esportivo.",
+    tags: ["React Native", "TypeScript"],
     category: "pessoal" as const,
-    icon: "🏃",
+    icon: "🦘",
   },
   {
-    title: "Sprint Planner",
-    description: "Ferramenta de planejamento de sprints para equipes ágeis com Kanban e relatórios visuais.",
-    tags: ["React", "Node.js", "PostgreSQL"],
+    title: "Cami3D",
+    description: "Aplicação web para personalização de camisetas em ambiente 3D interativo, permitindo customizar cores, padrões e designs com visualização em tempo real e experiência imersiva.",
+    tags: ["Three.js", "React", "Tailwind"],
     category: "profissional" as const,
-    icon: "📋",
+    icon: "👕",
   },
   {
-    title: "Nutrition Tracker",
-    description: "Controle nutricional personalizado para atletas, com cálculo de macros e planos alimentares.",
-    tags: ["Next.js", "Prisma", "Tailwind"],
-    category: "pessoal" as const,
-    icon: "🥗",
+    title: "EfficientNetV2 + ViT Hybrid",
+    description: "Modelo híbrido de deep learning para classificação de displasia em imagens histopatológicas, combinando CNNs e Vision Transformers.",
+    tags: ["TensorFlow", "Keras", "Deep Learning", "Computer Vision"],
+    category: "academico" as const,
+    icon: "🧠",
   },
   {
     title: "DevOps Dashboard",
@@ -71,8 +71,8 @@ export default function ProjectsSection() {
         </div>
 
         {/* Filters */}
-        <div className={`flex justify-center gap-2 mb-10 ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
-          {([["all", "Todos"], ["pessoal", "Pessoais"], ["profissional", "Profissionais"]] as const).map(([key, label]) => (
+        <div className={`flex justify-center gap-1 mb-10 ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
+          {([["all", "Todos"], ["pessoal", "Pessoais"], ["profissional", "Profissionais"], ["academico", "Acadêmicos"]] as const).map(([key, label]) => (
             <Button
               key={key}
               variant={filter === key ? "default" : "outline"}
@@ -89,9 +89,8 @@ export default function ProjectsSection() {
           {filtered.map((p, i) => (
             <Card
               key={p.title}
-              className={`glass group hover:glow transition-all duration-300 hover:scale-[1.02] hover:border-primary/30 ${
-                isVisible ? "animate-fade-up" : "opacity-0"
-              }`}
+              className={`glass group hover:glow transition-all duration-300 hover:scale-[1.02] hover:border-primary/30 ${isVisible ? "animate-fade-up" : "opacity-0"
+                }`}
               style={{ animationDelay: `${0.2 + i * 0.08}s` }}
             >
               <CardContent className="p-6 flex flex-col h-full">
@@ -106,12 +105,12 @@ export default function ProjectsSection() {
                   ))}
                 </div>
                 <div className="flex gap-2 mt-4 pt-4 border-t border-border/50">
-                  <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary gap-1.5">
+                  {/* <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary gap-1.5">
                     <Github className="h-4 w-4" /> Código
                   </Button>
                   <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary gap-1.5">
                     <ExternalLink className="h-4 w-4" /> Demo
-                  </Button>
+                  </Button> */}
                 </div>
               </CardContent>
             </Card>
