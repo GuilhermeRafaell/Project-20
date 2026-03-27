@@ -1,19 +1,52 @@
+import { FormEvent, useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Github, Linkedin, Instagram, Send } from "lucide-react";
+import { GithubIcon, LinkedinIcon, InstagramIcon, Send } from "lucide-react";
 
 const socials = [
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Github, label: "GitHub", href: "https://github.com/GuilhermeRafaell?tab=repositories" },
-  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/guilherm6/" },
+  { icon: LinkedinIcon, label: "LinkedIn", href: "https://www.linkedin.com/in/guilherme-rafael-a08b69230/" },
+  { icon: GithubIcon, label: "GitHub", href: "https://github.com/GuilhermeRafaell?tab=repositories" },
+  { icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/guilherm6/" },
 ];
+
+const WHATSAPP_NUMBER = "5534988720751";
 
 export default function ContactSection() {
   const { ref, isVisible } = useScrollAnimation();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const cleanMessage = message.trim();
+
+    if (!cleanMessage) {
+      return;
+    }
+
+    const cleanName = name.trim();
+    const cleanEmail = email.trim();
+
+    const personalizedMessage = [
+      "Olá Guilherme! Tudo bem?",
+      cleanName ? `Meu nome é ${cleanName}.` : "",
+      cleanEmail ? `Meu email é ${cleanEmail}.` : "",
+      "",
+      "Mensagem:",
+      cleanMessage,
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(personalizedMessage)}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section id="contato" className="py-20 sm:py-28">
@@ -29,20 +62,40 @@ export default function ContactSection() {
 
         <Card className={`glass glow ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
           <CardContent className="p-6 sm:p-8">
-            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Nome</Label>
-                  <Input id="name" placeholder="Seu nome" className="bg-background/50" />
+                  <Input
+                    id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Seu nome"
+                    className="bg-background/50"
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="seu@email.com" className="bg-background/50" />
+                  <Input
+                    id="email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="seu@email.com"
+                    className="bg-background/50"
+                  />
                 </div>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="message">Mensagem</Label>
-                <Textarea id="message" placeholder="Conte-me sobre seu projeto..." rows={5} className="bg-background/50" />
+                <Textarea
+                  id="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Conte-me sobre seu projeto..."
+                  rows={5}
+                  className="bg-background/50"
+                />
               </div>
               <Button type="submit" className="w-full gradient-bg text-primary-foreground font-semibold gap-2 glow">
                 <Send className="h-4 w-4" /> Enviar Mensagem

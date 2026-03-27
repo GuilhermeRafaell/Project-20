@@ -1,153 +1,60 @@
-# Portfolio - Atleta & Desenvolvedor
+# Portfolio - Atleta e Desenvolvedor
 
-Um portfólio pessoal moderno que une a paixão pelo atletismo com a excelência em desenvolvimento de software. Este projeto apresenta conquistas esportivas, projetos técnicos e habilidades profissionais em uma interface elegante e responsiva.
+Bem-vindo ao meu portfolio.
 
-## 🚀 Tecnologias
+Este projeto foi criado para apresentar, de forma clara e visual, quem eu sou como profissional: uma pessoa disciplinada pelo esporte, orientada a resultado e focada em construir solucoes digitais com qualidade.
 
-Este projeto foi desenvolvido com as seguintes tecnologias:
+## Sobre este projeto
 
-- **[Vite](https://vitejs.dev/)** - Build tool moderna e rápida
-- **[React](https://react.dev/)** - Biblioteca para construção de interfaces
-- **[TypeScript](https://www.typescriptlang.org/)** - Superset JavaScript com tipagem estática
-- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utility-first
-- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes reutilizáveis e customizáveis
-- **[React Query](https://tanstack.com/query/latest)** - Gerenciamento de estado assíncrono
-- **[React Router](https://reactrouter.com/)** - Roteamento para aplicações React
-- **[Vitest](https://vitest.dev/)** - Framework de testes unitários
-- **[Lucide React](https://lucide.dev/)** - Biblioteca de ícones
+Mais do que um site pessoal, esta pagina e uma vitrine da minha forma de trabalhar.
 
-## 📋 Estrutura do Projeto
+Aqui voce encontra:
 
-O projeto está organizado da seguinte forma:
+- Minha historia e valores profissionais
+- Principais conquistas no esporte e na tecnologia
+- Projetos desenvolvidos com foco em performance e usabilidade
+- Competencias tecnicas e comportamentais
+- Um canal direto para contato via WhatsApp
 
-```
-src/
-├── components/          # Componentes React
-│   ├── ui/             # Componentes base do shadcn/ui
-│   ├── Header.tsx      # Cabeçalho com navegação
-│   ├── HeroSection.tsx # Seção principal
-│   ├── AboutSection.tsx # Sobre
-│   ├── AchievementsSection.tsx # Conquistas esportivas
-│   ├── ProjectsSection.tsx # Projetos técnicos
-│   ├── SkillsSection.tsx # Habilidades
-│   ├── ContactSection.tsx # Contato
-│   └── Footer.tsx      # Rodapé
-├── pages/              # Páginas da aplicação
-│   ├── Index.tsx       # Página principal
-│   └── NotFound.tsx    # Página 404
-├── hooks/              # Custom hooks
-├── lib/                # Utilitários e configurações
-└── test/               # Arquivos de teste
-```
+## O que quero comunicar com este portfolio
 
-## 🎯 Funcionalidades
+- Consistencia: disciplina, foco e melhoria continua
+- Execucao: transformar ideia em produto funcional
+- Colaboracao: comunicacao clara e trabalho em equipe
+- Evolucao: aprendizado constante e adaptacao rapida
 
-- ✨ Design moderno com tema dark
-- 📱 Totalmente responsivo
-- 🎨 Componentes reutilizáveis com shadcn/ui
-- 🔄 Navegação suave entre seções
-- 🎭 Animações e transições elegantes
-- 🧪 Testes unitários configurados
-- 📦 Build otimizado para produção
-- 🔍 SEO-friendly
+## Para quem e este portfolio
 
-## 💻 Como executar
+Este conteudo foi pensado para:
 
-### Pré-requisitos
+- Recrutadores e empresas em busca de talentos com visao pratica
+- Liderancas tecnicas que valorizam atitude e capacidade de entrega
+- Conexoes do LinkedIn interessadas em acompanhar minha evolucao
+- Pessoas que querem conhecer meu trabalho de forma objetiva
 
-- [Node.js](https://nodejs.org/) (versão 16 ou superior)
-- [Bun](https://bun.sh/) ou npm/yarn
+## Principais destaques
 
-### Instalação
+- Interface moderna, responsiva e com boa experiencia de navegacao
+- Sessao de projetos com foco em impacto e resultado
+- Secao de skills com visualizacao em radar chart
+- Contato rapido com mensagem personalizada para WhatsApp
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/GuilhermeRafaell/Project-20.git
-```
+## Tecnologias utilizadas
 
-2. Acesse a pasta do projeto:
-```bash
-cd Project-20
-```
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Recharts
 
-3. Instale as dependências:
-```bash
-bun install
-```
-ou com npm:
-```bash
-npm install
-```
+## Vamos conversar
 
-### Executar em desenvolvimento
+Se voce busca alguem comprometido, com energia para executar e vontade real de gerar resultado, sera um prazer conversar.
 
-```bash
-bun run dev
-```
-ou com npm:
-```bash
-npm run dev
-```
-
-O projeto estará disponível em `http://localhost:5173`
-
-### Build para produção
-
-```bash
-bun run build
-```
-ou com npm:
-```bash
-npm run build
-```
-
-### Preview da build
-
-```bash
-bun run preview
-```
-ou com npm:
-```bash
-npm run preview
-```
-
-## 🧪 Testes
-
-Executar testes:
-```bash
-bun run test
-```
-
-Executar testes em modo watch:
-```bash
-bun run test:watch
-```
-
-## 📝 Scripts disponíveis
-
-- `dev` - Inicia o servidor de desenvolvimento
-- `build` - Gera build de produção
-- `build:dev` - Gera build em modo desenvolvimento
-- `preview` - Visualiza a build de produção
-- `lint` - Executa o ESLint
-- `test` - Executa os testes
-- `test:watch` - Executa os testes em modo watch
-
-## 🚀 Deploy
-
-O projeto pode ser facilmente implantado em plataformas como:
-
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Cloudflare Pages](https://pages.cloudflare.com/)
-
-Basta conectar o repositório e a plataforma detectará automaticamente as configurações do Vite.
-
-## 📄 Licença
-
-Este projeto está sob licença privada.
+- LinkedIn: https://www.linkedin.com/in/guilherme-rafael-a08b69230/
+- GitHub: https://github.com/GuilhermeRafaell
 
 ---
 
-Desenvolvido com 💙 e café
+Obrigado pela visita.

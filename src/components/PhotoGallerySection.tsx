@@ -23,7 +23,7 @@ interface Photo {
 const photos: Photo[] = [
   {
     id: 1,
-    src: "../../public/fotos/SummerBowlSaoCarlos.jpg",
+    src: "/fotos/SummerBowlSaoCarlos.jpg",
     title: "Summer Bowl 2025",
     description: "Conquista do 1° lugar no Summer Bowl",
     category: "podium",
@@ -42,7 +42,7 @@ const photos: Photo[] = [
   },
   {
     id: 3,
-    src: "../../public/fotos/IMG_4980.JPG",
+    src: "/fotos/IMG_4980.JPG",
     title: "Flag Football - Gators",
     description: "Jogo decisivo da Copa Brasil com os Gators",
     category: "flag",
@@ -51,7 +51,7 @@ const photos: Photo[] = [
   },
   {
     id: 4,
-    src: "../../public/fotos/MineirodeFlag2024.jpg",
+    src: "/fotos/MineirodeFlag2024.jpg",
     title: "Campeonato Mineiro",
     description: "2° lugar no Campeonato Mineiro de Flag",
     category: "podium",
@@ -61,7 +61,7 @@ const photos: Photo[] = [
   },
   {
     id: 5,
-    src: "../../public/fotos/DSC_9516.JPG",
+    src: "/fotos/DSC_9516.JPG",
     title: "Largada dos 100m",
     description: "Momento da largada na prova dos 100m rasos",
     category: "atletismo",
@@ -70,7 +70,7 @@ const photos: Photo[] = [
   },
   {
     id: 6,
-    src: "../../public/fotos/wielers.jpg",
+    src: "/fotos/wielers.jpg",
     title: "Time Weilers",
     description: "Equipe Weilers no Paulista de Flag",
     category: "flag",
@@ -79,7 +79,7 @@ const photos: Photo[] = [
   },
   {
     id: 7,
-    src: "../../public/fotos/PodioOlimpiadasUFU2023.jpg",
+    src: "/fotos/PodioOlimpiadasUFU2023.jpg",
     title: "Olimpíada UFU",
     description: "3° lugar no revezamento 4x100m",
     category: "podium",
@@ -89,7 +89,7 @@ const photos: Photo[] = [
   },
   {
     id: 8,
-    src: "../../public/fotos/57010.jpg",
+    src: "/fotos/57010.jpg",
     title: "Aquecimento Pré-Prova",
     description: "Rotina de aquecimento antes da competição",
     category: "atletismo",
@@ -98,7 +98,7 @@ const photos: Photo[] = [
   },
   {
     id: 9,
-    src: "../../public/fotos/interceptacao2024.jpg",
+    src: "/fotos/interceptacao2024.jpg",
     title: "Interceptação",
     description: "Momento decisivo do jogo com interceptação",
     category: "flag",

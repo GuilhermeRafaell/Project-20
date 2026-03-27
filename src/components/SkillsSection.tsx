@@ -1,35 +1,30 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ChartContainer, ChartLegend, ChartLegendContent, ChartTooltip, ChartTooltipContent, type ChartConfig } from "@/components/ui/chart";
+import { PolarAngleAxis, PolarGrid, Radar, RadarChart } from "recharts";
 
-const athleteSkills = [
-  { name: "Velocidade", level: 95 },
-  { name: "Resistência", level: 85 },
-  { name: "Disciplina", level: 98 },
-  { name: "Foco sob pressão", level: 90 },
-  { name: "Trabalho em equipe", level: 95},
+const radarData = [
+  { skill: "Disciplina", atletica: 98, tecnica: 90 },
+  { skill: "Consistência", atletica: 94, tecnica: 88 },
+  { skill: "Velocidade", atletica: 95, tecnica: 86 },
+  { skill: "Estratégia", atletica: 89, tecnica: 84 },
+  { skill: "Trabalho em equipe", atletica: 95, tecnica: 91 },
+  { skill: "Foco sob pressão", atletica: 90, tecnica: 87 },
 ];
 
-const techSkills = [
-  { name: "React / React Native", level: 92 },
-  { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "Java / Spring Boot", level: 70 },
-  { name: "SQL / PostgreSQL", level: 88 },
-];
+const chartConfig = {
+  atletica: {
+    label: "Habilidades Atléticas",
+    color: "hsl(210 100% 56%)",
+  },
+  tecnica: {
+    label: "Habilidades Técnicas",
+    color: "hsl(var(--primary))",
+  },
+} satisfies ChartConfig;
 
 const tools = ["Git", "Docker", "AWS", "Figma", "Jira", "VS Code", "Postman", "Linux"];
-
-function ProgressBar({ value, delay, visible }: { value: number; delay: string; visible: boolean }) {
-  return (
-    <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
-      <div
-        className="h-full gradient-bg rounded-full transition-all duration-1000 ease-out"
-        style={{ width: visible ? `${value}%` : "0%", transitionDelay: delay }}
-      />
-    </div>
-  );
-}
 
 export default function SkillsSection() {
   const { ref, isVisible } = useScrollAnimation();
@@ -47,43 +42,38 @@ export default function SkillsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Athletic Skills */}
-          <Card className={`glass glow ${isVisible ? "animate-slide-in-left" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
-            <CardContent className="p-6 space-y-5">
-              <h3 className="font-display text-xl font-semibold flex items-center gap-2">
-                🏃 Habilidades Atléticas
-              </h3>
-              {athleteSkills.map((s, i) => (
-                <div key={s.name} className="space-y-1.5">
-                  <div className="flex justify-between text-sm">
-                    <span>{s.name}</span>
-                    <span className="text-primary font-medium">{s.level}%</span>
-                  </div>
-                  <ProgressBar value={s.level} delay={`${0.3 + i * 0.1}s`} visible={isVisible} />
-                </div>
-              ))}
-            </CardContent>
-          </Card>
+        <Card className={`glass glow ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
+          <CardContent className="p-6 sm:p-8 space-y-4">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <h3 className="font-display text-xl font-semibold">Radar de Competências</h3>
+            </div>
 
-          {/* Tech Skills */}
-          <Card className={`glass glow ${isVisible ? "animate-slide-in-right" : "opacity-0"}`} style={{ animationDelay: "0.2s" }}>
-            <CardContent className="p-6 space-y-5">
-              <h3 className="font-display text-xl font-semibold flex items-center gap-2">
-                💻 Habilidades Técnicas
-              </h3>
-              {techSkills.map((s, i) => (
-                <div key={s.name} className="space-y-1.5">
-                  <div className="flex justify-between text-sm">
-                    <span>{s.name}</span>
-                    <span className="text-primary font-medium">{s.level}%</span>
-                  </div>
-                  <ProgressBar value={s.level} delay={`${0.3 + i * 0.1}s`} visible={isVisible} />
-                </div>
-              ))}
-            </CardContent>
-          </Card>
-        </div>
+            <ChartContainer config={chartConfig} className="mx-auto aspect-square h-[380px] w-full max-w-[560px]">
+              <RadarChart data={radarData} margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
+                <ChartTooltip content={<ChartTooltipContent />} />
+                <PolarGrid gridType="circle" />
+                <PolarAngleAxis dataKey="skill" tick={{ fontSize: 12 }} />
+                <Radar
+                  name="Habilidades Atléticas"
+                  dataKey="atletica"
+                  stroke="var(--color-atletica)"
+                  fill="var(--color-atletica)"
+                  fillOpacity={0.35}
+                  strokeWidth={2}
+                />
+                <Radar
+                  name="Habilidades Técnicas"
+                  dataKey="tecnica"
+                  stroke="var(--color-tecnica)"
+                  fill="var(--color-tecnica)"
+                  fillOpacity={0.2}
+                  strokeWidth={2}
+                />
+                <ChartLegend content={<ChartLegendContent />} />
+              </RadarChart>
+            </ChartContainer>
+          </CardContent>
+        </Card>
 
         {/* Tools */}
         <div className={`mt-8 text-center ${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "0.5s" }}>
