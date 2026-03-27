@@ -33,7 +33,7 @@ const photos: Photo[] = [
   },
   {
     id: 2,
-    src: "../../public/fotos/treinoVelocidade.JPG",
+    src: "/fotos/treinoVelocidade.JPG",
     title: "Treino de Velocidade",
     description: "Sessão de treino focada em explosão e velocidade",
     category: "atletismo",
