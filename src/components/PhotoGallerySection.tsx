@@ -23,87 +23,87 @@ interface Photo {
 const photos: Photo[] = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80",
+    src: "../../public/fotos/SummerBowlSaoCarlos.jpg",
     title: "Summer Bowl 2025",
     description: "Conquista do 1° lugar no Summer Bowl",
     category: "podium",
-    date: "Janeiro 2025",
-    location: "São Paulo, SP",
+    date: "8 Novembro 2025",
+    location: "São Carlos, SP",
     achievement: "🥇 1° Lugar"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=80",
+    src: "../../public/fotos/treinoVelocidade.JPG",
     title: "Treino de Velocidade",
     description: "Sessão de treino focada em explosão e velocidade",
     category: "atletismo",
-    date: "Dezembro 2024",
-    location: "Pista UFU"
+    date: "19 Janeiro 2025",
+    location: "Leme, SP"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1508355991726-dc68a52d7e0a?w=800&q=80",
+    src: "../../public/fotos/IMG_4980.JPG",
     title: "Flag Football - Gators",
     description: "Jogo decisivo da Copa Brasil com os Gators",
     category: "flag",
-    date: "Novembro 2024",
-    location: "Brasília, DF"
+    date: "19 Julho 2025",
+    location: "CTT - São Paulo, DF"
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=800&q=80",
+    src: "../../public/fotos/MineirodeFlag2024.jpg",
     title: "Campeonato Mineiro",
     description: "2° lugar no Campeonato Mineiro de Flag",
     category: "podium",
-    date: "Outubro 2024",
-    location: "Belo Horizonte, MG",
+    date: "15 Dezembro 2024",
+    location: "Monte Santo De Minas, MG",
     achievement: "🥈 2° Lugar"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1611424848305-3d24cdf3e8e0?w=800&q=80",
+    src: "../../public/fotos/DSC_9516.JPG",
     title: "Largada dos 100m",
     description: "Momento da largada na prova dos 100m rasos",
     category: "atletismo",
-    date: "Setembro 2024",
+    date: "29 Setembro 2024",
     location: "Uberlândia, MG"
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?w=800&q=80",
+    src: "../../public/fotos/wielers.jpg",
     title: "Time Weilers",
     description: "Equipe Weilers no Paulista de Flag",
     category: "flag",
-    date: "Agosto 2024",
-    location: "São Paulo, SP"
+    date: "25 Maio 2025",
+    location: "Sorocaba, SP"
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800&q=80",
+    src: "../../public/fotos/PodioOlimpiadasUFU2023.jpg",
     title: "Olimpíada UFU",
     description: "3° lugar no revezamento 4x100m",
     category: "podium",
-    date: "Maio 2023",
+    date: "29 Setembro 2023",
     location: "UFU - Uberlândia",
     achievement: "🥉 3° Lugar"
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=800&q=80",
+    src: "../../public/fotos/57010.jpg",
     title: "Aquecimento Pré-Prova",
     description: "Rotina de aquecimento antes da competição",
     category: "atletismo",
-    date: "Julho 2024",
-    location: "Pista UFU"
+    date: "11 Maio 2025",
+    location: "Pista Sesi Gravatas"
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=800&q=80",
+    src: "../../public/fotos/interceptacao2024.jpg",
     title: "Interceptação",
     description: "Momento decisivo do jogo com interceptação",
     category: "flag",
-    date: "Junho 2024",
-    location: "Campo AABB"
+    date: "28 Julho 2024",
+    location: "Campo Ribeirao Preto, SP"
   }
 ];
 
