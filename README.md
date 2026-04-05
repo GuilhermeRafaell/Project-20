@@ -2,17 +2,17 @@
 
 Bem-vindo ao meu portfolio.
 
-Este projeto foi criado para apresentar, de forma clara e visual, quem eu sou como profissional: uma pessoa disciplinada pelo esporte, orientada a resultado e focada em construir solucoes digitais com qualidade.
+Este projeto foi criado para apresentar, de forma clara e visual, quem eu sou como profissional
 
 ## Sobre este projeto
 
-Mais do que um site pessoal, esta pagina e uma vitrine da minha forma de trabalhar.
+Nao só um site pessoal, esta pagina e uma vitrine da minha forma de ver as coisas.
 
-Aqui voce encontra:
+Aqui voce vai encontra:
 
-- Minha historia e valores profissionais
-- Principais conquistas no esporte e na tecnologia
-- Projetos desenvolvidos com foco em performance e usabilidade
+- Minha trajetória e valores profissionais
+- Principais conquistas no esporte e na carreira
+- Projetos desenvolvidos
 - Competencias tecnicas e comportamentais
 - Um canal direto para contato via WhatsApp
 
@@ -22,22 +22,6 @@ Aqui voce encontra:
 - Execucao: transformar ideia em produto funcional
 - Colaboracao: comunicacao clara e trabalho em equipe
 - Evolucao: aprendizado constante e adaptacao rapida
-
-## Para quem e este portfolio
-
-Este conteudo foi pensado para:
-
-- Recrutadores e empresas em busca de talentos com visao pratica
-- Liderancas tecnicas que valorizam atitude e capacidade de entrega
-- Conexoes do LinkedIn interessadas em acompanhar minha evolucao
-- Pessoas que querem conhecer meu trabalho de forma objetiva
-
-## Principais destaques
-
-- Interface moderna, responsiva e com boa experiencia de navegacao
-- Sessao de projetos com foco em impacto e resultado
-- Secao de skills com visualizacao em radar chart
-- Contato rapido com mensagem personalizada para WhatsApp
 
 ## Tecnologias utilizadas
 
